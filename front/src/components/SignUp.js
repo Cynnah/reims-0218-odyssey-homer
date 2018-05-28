@@ -15,7 +15,7 @@ class SignUp extends React.Component {
 
   render() {
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form>
         <Label>
           Name:
           <Input
