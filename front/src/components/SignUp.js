@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, input } from "react";
 
 class SignUp extends Component {
   render() {
-    return <div> nouveau composant </div>;
+    return <input type="email" name="email" />;
   }
 }
 
