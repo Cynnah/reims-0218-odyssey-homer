@@ -1,20 +1,32 @@
 import React from "react";
-import { Input, Container } from "reactstrap";
+import { Input, Form, Label } from "reactstrap";
 
 class SignUp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: "demo@demo.fr" };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+
   render() {
     return (
-      <Container>
-        <h1>Sign up</h1>{" "}
-        <Input
-          type="email"
-          name="email"
-          id="exampleEmail"
-          placeholder="Email"
-        />
-      </Container>
+      <Form onSubmit={this.handleSubmit}>
+        <Label>
+          Name:
+          <Input
+            type="text"
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
+        </Label>
+        <h1>{this.state.value} </h1>
+      </Form>
     );
   }
 }
-
 export default SignUp;
