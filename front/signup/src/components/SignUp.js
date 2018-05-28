@@ -19,7 +19,8 @@ class SignUp extends Component {
       <form>
         <h1> {this.state.value}</h1>
         <input
-          type="text"
+          name="email"
+          type="email"
           value={this.state.value}
           onChange={this.updateEmailField}
         />
