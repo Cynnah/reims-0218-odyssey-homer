@@ -15,7 +15,7 @@ class SignUp extends React.Component {
   render() {
     return (
       <div>
-        <p>SignUp</p>
+        <p>Sign Up</p>
         <h1>{this.state.value}</h1>
         <input
           type="email"
