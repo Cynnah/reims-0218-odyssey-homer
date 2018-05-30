@@ -18,10 +18,10 @@ class App extends Component {
   render() {
     return (
 
-      	<div className="App">
-		<h1>{this.state.email}</h1>
-		<input type="email" name="email" onChange={this.updateEmailField.bind(this)}/>
-		<SignUp email={this.state.email} />      
+		<div className="App">
+			<h1>{this.state.email}</h1>
+			<input type="email" name="email" onChange={this.updateEmailField.bind(this)}/>
+			<SignUp email={this.state.email} />      
 	</div>
     );
   }
